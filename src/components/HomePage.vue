@@ -2,7 +2,7 @@
 
 <template>
   <div
-    name="home"
+    id="home"
     class="h-screen bg-hero bg-no-repeat bg-cover bg-center md:bg-fixed"
   >
     <div class="sm:bg-white/50 bg-white/80 h-full">

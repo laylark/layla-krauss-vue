@@ -1,7 +1,10 @@
 <script setup></script>
 
 <template>
-  <div name="about" class="bg-white-bg text-gray-800 flex items-center">
+  <div
+    id="about"
+    class="bg-white-bg text-gray-800 min-h-screen flex items-center"
+  >
     <div class="flex flex-col justify-center items-center h-full p-16">
       <div class="max-w-[1000px] w-full grid grid-cols-2 gap-8">
         <div class="sm:text-right pb-8">
