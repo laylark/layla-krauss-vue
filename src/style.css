@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+      @apply font-[Raleway];
+    }
+    li {
+      @apply px-4;
+      @apply cursor-pointer;
+    }
+  }
+  
+  .content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+  }
+  
+  .content-div:hover {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 115, 0, 0.8),
+      rgb(255, 98, 0)
+    ) !important;
+  }
+  

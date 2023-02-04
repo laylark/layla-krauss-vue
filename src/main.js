@@ -8,7 +8,7 @@ import VueSmoothScroll from 'vue3-smooth-scroll';
 import App from "./App.vue";
 import router from "./router";
 import "./style.css";
-import "./assets/main.css";
+// import "./assets/main.css";
 
 addIcons(BiArrowRight);
 

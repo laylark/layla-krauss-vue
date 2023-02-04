@@ -13,12 +13,17 @@ module.exports = {
       colors: {
         black: {
           light: "#454545",
+          shadow: "#040C16",
         },
         purple: {
           light: "#546696",
-          dark: "#45537a",
+          dark: "#45537A",
         },
         orange: "#FF7200",
+        white: {
+          DEFAULT: "#FFFFFF",
+          bg: "#F2F4FA",
+        },
       },
     },
   },

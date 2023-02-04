@@ -1,9 +1,13 @@
 <script setup>
-import Home from "../components/Home.vue";
+import HomePage from "../components/HomePage.vue";
+import ProjectsPage from "../components/ProjectsPage.vue";
 </script>
 
 <template>
   <main>
-    <Home />
+    <HomePage />
+    <ProjectsPage />
   </main>
 </template>
+
+<style></style>
