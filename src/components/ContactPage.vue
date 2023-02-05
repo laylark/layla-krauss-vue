@@ -3,7 +3,7 @@
 <template>
   <div
     id="contact"
-    class="min-h-screen bg-white-bg flex flex-col items-center flex-wrap p-16"
+    class="min-h-screen bg-white-bg flex flex-col items-center p-16"
   >
     <form
       method="POST"
