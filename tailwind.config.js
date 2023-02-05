@@ -23,6 +23,7 @@ module.exports = {
         white: {
           DEFAULT: "#FFFFFF",
           bg: "#F2F4FA",
+          skills: "#F6F7FA",
         },
         gray: { form: "#E5E5E5" },
         green: "#09732B",

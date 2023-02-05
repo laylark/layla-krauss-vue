@@ -15,8 +15,8 @@ window.addEventListener("scroll", changeColor);
 </script>
 <template>
   <div
-    :class="`bg-white/80 fixed w-full h-[70px] flex justify-between items-center px-4 text-black-light z-10 transition-all duration-500
-    ${setColor ? 'bg-black-light text-white h-[80px]' : ''}`"
+    :class="`fixed w-full h-[70px] flex justify-between items-center px-4 text-black-light z-10 transition-all duration-500
+    ${setColor ? 'bg-black-light text-white h-[80px]' : 'bg-white/80'}`"
   >
     <div>
       <img :src="setColor ? LogoWhite : Logo" alt="Logo" class="w-[160px]" />
