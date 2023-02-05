@@ -24,6 +24,8 @@ module.exports = {
           DEFAULT: "#FFFFFF",
           bg: "#F2F4FA",
         },
+        gray: { form: "#E5E5E5" },
+        green: "#09732B",
       },
     },
   },

@@ -1,7 +1,5 @@
 <script setup>
-import { ref } from "vue";
-
-import GridItem from "../components/GridItem.vue";
+import GridItem from "./GridItem.vue";
 import NICU from "../assets/nicu.jpeg";
 import DoggyAuctions from "../assets/doggy-auctions.jpg";
 import Tidbits from "../assets/tidbits.jpg";
