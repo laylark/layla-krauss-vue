@@ -27,10 +27,12 @@
               duration: 500,
               offset: -75,
             }"
-            class="group/foo inline-block text-white border-black-light bg-black-light border-2 px-6 py-3 my-2 hover:bg-transparent hover:border-orange hover:text-orange"
+            class="group/arrow inline-block text-white border-black-light bg-black-light border-2 px-6 py-3 my-2 hover:bg-transparent hover:border-orange hover:text-orange"
           >
             View Projects
-            <span class="group-hover/foo:rotate-90 durations:300 inline-block">
+            <span
+              class="group-hover/arrow:rotate-90 durations:300 inline-block"
+            >
               <v-icon name="bi-arrow-right" class="ml-3 inline" />
             </span>
           </a>

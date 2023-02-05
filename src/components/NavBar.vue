@@ -1,15 +1,21 @@
 <script setup>
+import { ref } from "vue";
 import Logo from "../assets/logo-gray.svg";
 import LogoWhite from "../assets/logo-white.svg";
 
-const closeNavBar = () => setNav(!nav);
+const showMenu = ref(false);
+let setColor = ref(false);
 
-// window.addEventListener("scroll", changeColor);
+const changeColor = () => {
+  setColor.value = window.scrollY >= 80;
+};
+
+window.addEventListener("scroll", changeColor);
 </script>
 <template>
-  <div class="header header-bg">
+  <div :class="setColor ? 'header header-bg' : 'header'">
     <div>
-      <img :src="LogoWhite" alt="Logo" class="w-[160px]" />
+      <img :src="setColor ? LogoWhite : Logo" alt="Logo" class="w-[160px]" />
     </div>
 
     <ul class="hidden md:flex">
@@ -71,63 +77,78 @@ const closeNavBar = () => setNav(!nav);
     </ul>
 
     <!-- Hamburger -->
-    <button @click="" class="md:hidden z-10">Menu</button>
+    <button @click="showMenu = !showMenu" class="md:hidden z-10 text-lg">
+      <v-icon v-if="!showMenu" name="co-hamburger-menu" scale="2" />
+      <v-icon v-else fill="white" name="io-close" scale="2" />
+    </button>
 
     <!-- Mobile menu -->
-    <ul>
+    <ul
+      :class="
+        !showMenu
+          ? 'hidden'
+          : 'absolute top-0 left-0 w-full h-screen bg-[#09732B]/95 text-white flex flex-col justify-center items-center'
+      "
+    >
       <li class="py-6 text-4xl">
-        <Link
-          onClick="{handleClick}"
-          to="home"
-          smooth="{true}"
-          duration="{500}"
+        <a
+          @click="showMenu = !showMenu"
+          href="#home"
+          v-smooth-scroll="{
+            duration: 500,
+            offset: -80,
+          }"
         >
           Home
-        </Link>
+        </a>
       </li>
       <li class="py-6 text-4xl">
-        <Link
-          onClick="{handleClick}"
-          to="about"
-          smooth="{true}"
-          duration="{500}"
-          offset="{-80}"
+        <a
+          @click="showMenu = !showMenu"
+          href="#about"
+          v-smooth-scroll="{
+            duration: 500,
+            offset: -80,
+          }"
         >
           About
-        </Link>
+        </a>
       </li>
       <li class="py-6 text-4xl">
-        <Link
-          onClick="{handleClick}"
-          to="skills"
-          smooth="{true}"
-          duration="{500}"
-          offset="{-80}"
+        <a
+          @click="showMenu = !showMenu"
+          href="#skills"
+          v-smooth-scroll="{
+            duration: 500,
+            offset: -80,
+          }"
         >
           Skills
-        </Link>
+        </a>
       </li>
       <li class="py-6 text-4xl">
-        <Link
-          onClick="{handleClick}"
-          to="projects"
-          smooth="{true}"
-          duration="{500}"
-          offset="{-80}"
+        <a
+          @click="showMenu = !showMenu"
+          href="#projects"
+          v-smooth-scroll="{
+            duration: 500,
+            offset: -80,
+          }"
         >
           Projects
-        </Link>
+        </a>
       </li>
       <li class="py-6 text-4xl">
-        <Link
-          onClick="{handleClick}"
-          to="contact"
-          smooth="{true}"
-          duration="{500}"
-          offset="{-80}"
+        <a
+          @click="showMenu = !showMenu"
+          href="#contact"
+          v-smooth-scroll="{
+            duration: 500,
+            offset: -80,
+          }"
         >
           Contact
-        </Link>
+        </a>
       </li>
     </ul>
   </div>

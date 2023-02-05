@@ -9,7 +9,7 @@ import Wiki from "../assets/wiki.jpg";
 import Search from "../assets/search.jpg";
 import FCC from "../assets/fcc.jpeg";
 
-const items = ref([
+const items = [
   {
     name: "Flask Application",
     imgPath: NICU,
@@ -46,7 +46,7 @@ const items = ref([
     url: "https://www.freecodecamp.org/certification/laylark/responsive-web-design",
     code: "",
   },
-]);
+];
 </script>
 
 <template>
