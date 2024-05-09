@@ -17,7 +17,7 @@ const items = [
   {
     name: "Flask Application",
     imgPath: Tidbits,
-    url: "https://tidbits.mothercodesbest.dev/",
+    url: "",
     code: "https://github.com/laylark/openai-quickstart-python.git",
   },
   {

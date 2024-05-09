@@ -12,7 +12,7 @@ defineProps(["item"]);
         {{ item.name }}
       </span>
       <div class="pt-8 text-center">
-        <a :href="item.url" target="_blank">
+        <a v-if="item.url" :href="item.url" target="_blank">
           <button
             class="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg"
           >

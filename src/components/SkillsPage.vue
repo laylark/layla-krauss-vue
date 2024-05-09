@@ -12,8 +12,28 @@ import SQLite from "../assets/sqlite.png";
 import Shell from "../assets/shell.png";
 import VSCode from "../assets/vscode.png";
 import Django from "../assets/django.png";
+import Laravel from "../assets/laravel.png";
+import Vue from "../assets/vue.png";
+import PostgreSQL from "../assets/postgresql.png";
+import Flutter from "../assets/flutter.png";
 
 const items = [
+  {
+    name: "Laravel",
+    imgPath: Laravel,
+  },
+  {
+    name: "Vue",
+    imgPath: Vue,
+  },
+  {
+    name: "PostgreSQL",
+    imgPath: PostgreSQL,
+  },
+  {
+    name: "Flutter",
+    imgPath: Flutter,
+  },
   {
     name: "HTML",
     imgPath: HTML,
