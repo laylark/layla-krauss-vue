@@ -25,8 +25,8 @@
             meaning there are always new learning opportunities. My goal is to
             create meaningful software to help others increase productivity at
             work, home, or anywhere. I have the most fun building data-driven
-            projects using databases, Laravel, Vue, and APIs; however, I
-            do enjoy making responsive front-end web applications.
+            projects using databases, Laravel, Vue, and APIs; however, I do
+            enjoy making responsive front-end web applications.
           </p>
           <p class="py-4">
             I am also a mom, registered dietitian nutritionist, adjunct

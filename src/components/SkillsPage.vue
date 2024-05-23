@@ -16,6 +16,7 @@ import Laravel from "../assets/laravel.png";
 import Vue from "../assets/vue.png";
 import PostgreSQL from "../assets/postgresql.png";
 import Flutter from "../assets/flutter.png";
+import DotNet from "../assets/dotnet.png";
 
 const items = [
   {
@@ -33,6 +34,10 @@ const items = [
   {
     name: "Flutter",
     imgPath: Flutter,
+  },
+  {
+    name: ".NET",
+    imgPath: DotNet,
   },
   {
     name: "HTML",
